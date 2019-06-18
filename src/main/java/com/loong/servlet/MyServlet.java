@@ -43,13 +43,15 @@ public class MyServlet implements Servlet {
             UsernamePasswordToken token=new UsernamePasswordToken(username,password);
             try {
                 subject.login(token);
-                response.sendRedirect("/list.jsp");
             }catch (AccountException e){
-                System.out.println(e.getMessage());
+                //登陆失败去list页面
+                System.out.println("aaaaaaa:"+e.getMessage());
                 response.sendRedirect("/login.jsp");
                 return;
             }
         }
+        //登陆成功时
+        response.sendRedirect("/list.jsp");
     }
 
     @Override
