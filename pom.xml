@@ -17,7 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <shiroVersion>1.4.1</shiroVersion>
+        <shiroVersion>1.10.0</shiroVersion>
     </properties>
 
     <dependencies>
